@@ -7,7 +7,7 @@ import Logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gray-900 text-gray-300">
-      <div className='pt-5'>
+      <div className='pt-5 -ml-10'>
         <Image src={Logo} alt="Logo Image" height={200} width={200}/>
       </div>
     </div>
