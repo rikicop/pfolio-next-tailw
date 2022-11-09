@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
 
 @tailwind base;
@@ -9,12 +10,31 @@
 
 @layer base {
     body {
-      @apply font-[Raleway];
+      @apply font-[Poppins] tracking-wide;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-[Poppins] font-bold;
+    }
+
+    h1 {
+      @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+    }
+
+    h2 {
+      @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+    }
+
     li {
         @apply px-4;
         @apply cursor-pointer;
         @apply hover:text-cyan-500;
-        @apply font-Roboto;
+        @apply font-[Poppins];
+        @apply text-lg;
+
+    }
+ 
+    button{
+        @apply shadow-sm shadow-cyan-500 rounded-xl uppercase bg-gradient-to-r from-cyan-500 to-cyan-600 text-white;
     }
 }

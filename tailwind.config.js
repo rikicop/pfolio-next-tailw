@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'peque': { 'raw': '(max-height: 499px)' },
-      }
+        'short': { 'raw': '(max-height:300px)' },
+      },
     },
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],
