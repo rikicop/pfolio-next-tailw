@@ -14,7 +14,7 @@ const Nav = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full fixed top-0">
     <div className="md:flex items-center justify-between bg-gray-900 text-white py-2 md:px-10 px-7 ">
     <div className='ml-[-1rem] pt-1'>{/*  Alternative logo position  className='pt-5 -ml-10' */}
       <Image src={Logo} alt="Logo Image" height={45} width={45} />
