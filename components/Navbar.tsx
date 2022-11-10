@@ -15,16 +15,16 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between bg-gray-900 text-white py-2 md:px-10 px-7 ">
-        <div className='ml-0'>{/*  Alternative logo position  className='pt-5 -ml-10' */}
-      <Image src={Logo} alt="Logo Image" height={50} width={50} />
+    <div className="md:flex items-center justify-between bg-gray-900 text-white py-2 md:px-10 px-7 ">
+    <div className='ml-[-1rem] pt-1'>{/*  Alternative logo position  className='pt-5 -ml-10' */}
+      <Image src={Logo} alt="Logo Image" height={45} width={45} />
     </div>
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-4xl absolute right-[0.9rem] top-4 cursor-pointer md:hidden"
         >
-        <span className="text-3xl text-cyan-600 mr-1 pt-2">
+        <span className="text-4xl text-cyan-600">
           {open ? <FaTimes /> : <FaBars />}
         </span> 
           
@@ -33,7 +33,7 @@ const Nav = () => {
         {/* portrait:pt-[200px] mobile orientation changed */}
         {/* 'raw': '(max-height: 1234px),(min-width:920px)' */}
         <ul
-          className={`short:pt-[180px] short:pb-[200px] overflow-scroll max-h-[85vh]   flex flex-col justify-center items-center md:overflow-hidden md:flex md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.6rem] " : "top-[-450px]"
+          className={`short:pt-[180px] short:pb-[200px] overflow-scroll max-h-[85vh] flex flex-col justify-center items-center md:overflow-hidden md:flex md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.5rem] " : "top-[-450px]"
             } `}
         >
           {Links.map((link) => (
