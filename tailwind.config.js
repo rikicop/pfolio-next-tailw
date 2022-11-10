@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'short': { 'raw': '(max-height:300px)' },
+        'short': { 'raw': '(max-height:300px) , (max-width: 300px)' },
       },
     },
     fontFamily: {
