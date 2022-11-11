@@ -14,9 +14,9 @@ const Nav = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="fixed w-full h-20 z-[100] top-0">
-    <div className="md:flex items-center justify-between bg-gray-900 text-white py-2 md:px-10 px-7 ">
-    <div className='ml-[-1rem] pt-1'>{/*  Alternative logo position  className='pt-5 -ml-10' */}
+    <div className="shadow-md fixed w-full top-0 left-0 z-[100]">
+    <div className="md:flex bg-gray-900 text-white justify-between py-2 md:px-2">
+    <div className='ml-2 pt-1'>
       <Image src={Logo} alt="Logo Image" height={45} width={45} />
     </div>
         <div
@@ -31,7 +31,7 @@ const Nav = () => {
         {/*  overflow-scroll max-h-[85vh] <- Permite Scroll en Landscape*/}
         {/* 'raw': '(max-height: 1234px),(min-width:920px)' */}
         <ul
-          className={`short:pt-[180px] short:pb-[200px] overflow-scroll max-h-[85vh] flex flex-col justify-center items-center md:overflow-hidden md:flex md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.5rem] " : "top-[-450px]"
+          className={`overflow-scroll short:pt-[180px] short:pb-[200px]  max-h-[85vh] flex flex-col justify-center items-center md:overflow-hidden md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.5rem] " : "top-[-450px]"
             } `}
         >
           {Links.map((link) => (
