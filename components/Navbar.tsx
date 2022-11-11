@@ -31,7 +31,7 @@ const Nav = () => {
         {/*  overflow-scroll max-h-[85vh] <- Permite Scroll en Landscape*/}
         {/* 'raw': '(max-height: 1234px),(min-width:920px)' */}
         <ul
-          className={`overflow-scroll short:pt-[180px] short:pb-[200px]  max-h-[85vh] flex flex-col justify-center items-center md:overflow-hidden md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.5rem] " : "top-[-450px]"
+          className={`overflow-scroll pr-1 short:pt-[180px] short:pb-[200px]  max-h-[85vh] flex flex-col justify-center items-center md:overflow-hidden md:flex-row md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? "top-[4.5rem] " : "top-[-450px]"
             } `}
         >
           {Links.map((link) => (
