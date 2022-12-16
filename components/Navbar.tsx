@@ -15,7 +15,7 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <div className="shadow-md fixed w-full top-0 left-0 z-[100]">
-    <div className="md:flex bg-gray-900 text-white justify-between py-2 md:px-2">
+    <div className="md:flex bg-gray-900 text-white justify-between py-2 md:pl-2 md:pr-4">
     <div className='ml-2 pt-1'>
       <Image src={Logo} alt="Logo Image" height={45} width={45} />
     </div>
