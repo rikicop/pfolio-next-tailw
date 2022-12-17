@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Button from "./Button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../public/assets/logo.png";
 import Image from 'next/image'
+//import Link from "next/link";
 
 const Nav = () => {
   let Links = [
-    { name: "HOME", link: "/" },
-    { name: "SERVICE", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "BLOG", link: "/" },
-    { name: "CONTACT", link: "/" },
+    { name: "HOME", link: "/#home" },
+    { name: "ABOUT", link: "/#about" },
+    { name: "SKILLS", link: "/#skills" },
+     { name: "PROJECTS", link: "/#projects" },
+    { name: "CONTACT", link: "/#contact" },
   ];
   let [open, setOpen] = useState(false);
+  
   return (
     <div className="shadow-md fixed w-full top-0 left-0 z-[100]">
     <div className="md:flex bg-gray-900 text-white justify-between py-2 md:pl-2 md:pr-4">
     <div className='ml-2 pt-1'>
-      <Image src={Logo} alt="Logo Image" height={45} width={45} />
+      <a href="/#home">
+        <Image src={Logo} alt="Logo Image" height={45} width={45} />
+      </a>
     </div>
         <div
           onClick={() => setOpen(!open)}
