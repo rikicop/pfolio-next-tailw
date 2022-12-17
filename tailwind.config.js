@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       screens: {
         'md': '960px',
+        'msm': { 'max': '639px' },
+        'mmd': { 'max': '767px' },
         'short': { 'raw': '(max-height:300px) , (max-width: 300px)' },
       },
     },

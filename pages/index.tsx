@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
-import Hero from '../components/Hero'
+//import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import Main from '../components/Main'
+import About from '../components/About'
+import Skills from '../components/Skills'
 
 
 
@@ -8,10 +11,9 @@ const Home: NextPage = () => {
   return (
     <div>
       <Navbar/>
-      <Hero/>
-      <Hero/>
-      <Hero/>
-
+      <Main />
+      <About />
+      <Skills />
     </div>
   )
 }
