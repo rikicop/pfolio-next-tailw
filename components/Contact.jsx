@@ -13,7 +13,7 @@ const Contact = () => {
                     Contact
                 </p>
                 <h2 className='py-4'>Get In Touch</h2>
-                <div className='grid lg:grid-cols-5 gap-8'>
+                <div className='grid lg:grid-cols-5 gap-8 msm:mx-4'>
                     {/* Left */}
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='lg:p-4 h-full'>
@@ -96,7 +96,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>
-                    <Link href='/#home'>
+                    <Link href='/#home' scroll={false}>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <HiOutlineChevronDoubleUp className='text-blue-400' size={30} />
                         </div>

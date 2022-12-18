@@ -1,9 +1,9 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../public/assets/logo.png";
 import Image from 'next/image'
-//import Link from "next/link";
+import Link from "next/link";
 
 const Nav = () => {
   let Links = [
@@ -19,9 +19,9 @@ const Nav = () => {
     <div className="shadow-md fixed w-full top-0 left-0 z-[100]">
     <div className="md:flex bg-gray-900 text-white justify-between py-2 md:pl-2 md:pr-4">
     <div className='ml-2 pt-1'>
-      <a href="/#home">
+      <Link href="/#home" scroll={false}>
         <Image src={Logo} alt="Logo Image" height={45} width={45} />
-      </a>
+      </Link>
     </div>
         <div
           onClick={() => setOpen(!open)}
@@ -39,13 +39,14 @@ const Nav = () => {
             } `}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-3">
-              <a
+            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-3" onClick={() => setOpen(!open)}>
+              <Link 
                 href={link.link}
                 className="text-white hover:text-gray-400 duration-500"
+                scroll={false}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <Button>Get Started</Button>
