@@ -5,7 +5,7 @@ import Logo from "../public/assets/logo.png";
 import Image from 'next/image'
 import Link from "next/link";
 
-const Nav = () => {
+const Navbar = () => {
   let Links = [
     { name: "HOME", link: "/#home" },
     { name: "ABOUT", link: "/#about" },
@@ -56,4 +56,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar
